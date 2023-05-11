@@ -1,0 +1,21 @@
+{
+   "name" : "mulle-linkedlist",
+   "version" : "0.0.1",
+   "description" : "mulle-linkedlist a wait and lock-free linked list",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repo" : "mulle-concurrent/mulle-linkedlist",
+   "src" : [
+      "src/generic/include.h",
+      "src/mulle-concurrent-linkedlist.c",
+      "src/mulle-concurrent-linkedlist.h",
+      "src/mulle-linkedlist.c",
+      "src/mulle-linkedlist.h",
+      "src/reflect/_mulle-linkedlist-include.h"
+   ],
+   "dependencies" : {
+      "mulle-c/mulle-c11": "*",
+      "mulle-c/mulle-allocator": "*",
+      "mulle-concurrent/mulle-thread": "*"
+   }
+}

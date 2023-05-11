@@ -1,0 +1,39 @@
+{
+   project =
+   {
+      description="🔂 mulle-linkedlist a wait and lock-free linked list";
+      domain="github";
+      name="mulle-linkedlist";
+      user="mulle-concurrent";
+      repo="mulle-linkedlist";
+      homepage="https://github.com/mulle-concurrent/mulle-linkedlist";
+      license="BSD3-License"
+   };
+   dependencies =
+   (
+      {
+         description="🔀 Cross-platform C compiler glue (and some cpp conveniences)";
+         domain="github";
+         name="mulle-c11";
+         repo="mulle-c11";
+         url="https://github.com/mulle-c/mulle-c11";
+         user="mulle-c";
+      },
+      {
+         description="🔄 Flexible C memory allocation scheme";
+         domain="github";
+         name="mulle-allocator";
+         repo="mulle-allocator";
+         url="https://github.com/mulle-c/mulle-allocator";
+         user="mulle-c";
+      },
+      {
+         description="🔠 Cross-platform thread/mutex/tss/atomic operations in C";
+         domain="github";
+         name="mulle-thread";
+         repo="mulle-thread";
+         url="https://github.com/mulle-concurrent/mulle-thread";
+         user="mulle-concurrent";
+      }
+   )
+}

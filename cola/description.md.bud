@@ -1,0 +1,3 @@
+The mulle-concurrent-linkedlist is a barebones lock- and wait-free linked list,
+that is used by mulle-aba and the mulle-objc-runtime. A single-threaded
+variant mulle-linkedlist is also supplied.
