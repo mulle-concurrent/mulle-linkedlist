@@ -2,12 +2,13 @@
 
 #### 🔂 mulle-linkedlist a wait and lock-free linked list
 
-mulle-linkedlist is a barebones lock- and wait-free linked list that is used
-by mulle-aba and the mulle-objc-runtime.
+The mulle-concurrent-linkedlist is a barebones lock- and wait-free linked list,
+that is used by mulle-aba and the mulle-objc-runtime. A single-threaded
+variant mulle-linkedlist is also supplied.
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//mulle-linkedlist.svg?branch=release) [![Build Status](https://github.com//mulle-linkedlist/workflows/CI/badge.svg?branch=release)](//github.com//mulle-linkedlist/actions)| [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-concurrent/mulle-linkedlist.svg?branch=release) [![Build Status](https://github.com/mulle-concurrent/mulle-linkedlist/workflows/CI/badge.svg?branch=release)](//github.com/mulle-concurrent/mulle-linkedlist/actions)| [RELEASENOTES](RELEASENOTES.md) |
 
 
 ## API
@@ -57,7 +58,7 @@ Use [mulle-sde](//github.com/mulle-sde) to build and install mulle-linkedlist an
 
 ``` sh
 mulle-sde install --prefix /usr/local \
-   https://github.com///archive/latest.tar.gz
+   https://github.com/mulle-concurrent/mulle-linkedlist/archive/latest.tar.gz
 ```
 
 ### Manual Installation
