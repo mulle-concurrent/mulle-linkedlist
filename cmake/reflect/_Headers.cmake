@@ -21,6 +21,7 @@ src/reflect
 #
 set( PUBLIC_GENERATED_HEADERS
 src/reflect/_mulle-linkedlist-include.h
+src/reflect/_mulle-linkedlist-versioncheck.h
 )
 
 #
