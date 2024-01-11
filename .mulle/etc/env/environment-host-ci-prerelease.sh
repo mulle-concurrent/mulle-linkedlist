@@ -1,19 +1,19 @@
 #
-# mulle-c11 nodetype: ${MULLE_C11_NODETYPE:-tar}
+# mulle-c11 nodetype: ${MULLE__C11_NODETYPE:-tar}
 #
-export MULLE_C11_NODETYPE="git"
+export MULLE__C11_NODETYPE="git"
 
 
 #
-# mulle-c11 url: ${MULLE_C11_URL:-https://github.com/mulle-c/mulle-c11/archive/${MULLE_TAG}.tar.gz}
+# mulle-c11 url: ${MULLE__C11_URL:-https://github.com/mulle-c/mulle-c11/archive/${MULLE_TAG}.tar.gz}
 #
-export MULLE_C11_URL="https://github.com/mulle-c/mulle-c11.git"
+export MULLE__C11_URL="https://github.com/mulle-c/mulle-c11.git"
 
 
 #
-# mulle-c11 branch: ${MULLE_C11_BRANCH}
+# mulle-c11 branch: ${MULLE__C11_BRANCH}
 #
-export MULLE_C11_BRANCH="prerelease"
+export MULLE__C11_BRANCH="prerelease"
 
 
 #
@@ -32,24 +32,6 @@ export MULLE__ALLOCATOR_URL="https://github.com/mulle-c/mulle-allocator.git"
 # mulle-allocator branch: ${MULLE__ALLOCATOR_BRANCH}
 #
 export MULLE__ALLOCATOR_BRANCH="prerelease"
-
-
-#
-# mulle-c11 nodetype: ${MULLE__C11_NODETYPE:-tar}
-#
-export MULLE__C11_NODETYPE="git"
-
-
-#
-# mulle-c11 url: ${MULLE__C11_URL:-https://github.com/mulle-c/mulle-c11/archive/${MULLE_TAG}.tar.gz}
-#
-export MULLE__C11_URL="https://github.com/mulle-c/mulle-c11.git"
-
-
-#
-# mulle-c11 branch: ${MULLE__C11_BRANCH}
-#
-export MULLE__C11_BRANCH="prerelease"
 
 
 #
