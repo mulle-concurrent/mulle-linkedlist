@@ -3,7 +3,7 @@
    "version" : "0.0.2",
    "description" : "🔂 mulle-linkedlist a wait and lock-free linked list",
    "keywords" : [],
-   "license" : "BSD3-License",
+   "license" : "BSD-3-Clause",
    "repo" : "mulle-concurrent/mulle-linkedlist",
    "src" : [
       "src/generic/include.h",
