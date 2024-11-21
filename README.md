@@ -10,7 +10,7 @@ variant mulle-linkedlist is also supplied.
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-concurrent/mulle-linkedlist.svg?branch=release) [![Build Status](https://github.com/mulle-concurrent/mulle-linkedlist/workflows/CI/badge.svg?branch=release)](//github.com/mulle-concurrent/mulle-linkedlist/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-concurrent/mulle-linkedlist.svg) [![Build Status](https://github.com/mulle-concurrent/mulle-linkedlist/workflows/CI/badge.svg)](//github.com/mulle-concurrent/mulle-linkedlist/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 ## API
