@@ -6,7 +6,7 @@
 # A convenient way to add a new source file is:
 #    mulle-sde add src/foo.c
 #
-cmake_minimum_required( VERSION 3.13)
+cmake_minimum_required( VERSION 3.13...99.99)
 
 project( mulle-linkedlist VERSION 0.0.5 LANGUAGES C)
 
