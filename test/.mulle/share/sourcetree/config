@@ -1,1 +1,1 @@
-mulle-linkedlist;${MULLE__LINKEDLIST_NODETYPE:-tar};;5F8B1224-24B1-45EB-B9D5-5782AD285AEF;${MULLE__LINKEDLIST_URL:-https://github.com/nat/mulle-linkedlist/archive/${MULLE_TAG}.tar.gz};${MULLE__LINKEDLIST_BRANCH};${MULLE__LINKEDLIST_TAG:-latest};;
+mulle-linkedlist;${MULLE__LINKEDLIST_NODETYPE:-tar};;8DC74655-C0A5-487E-A66D-9F518FD0E41C;${MULLE__LINKEDLIST_URL:-https://github.com/mulle-nat/mulle-linkedlist/archive/${MULLE_TAG}.tar.gz};${MULLE__LINKEDLIST_BRANCH};${MULLE__LINKEDLIST_TAG:-latest};;
