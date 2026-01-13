@@ -1,15 +1,3 @@
-### 0.0.5
+### 0.0.6
 
 Various small improvements
-
-### 0.0.4
-
-Various small improvements
-
-### 0.0.3
-
-Various small improvements
-
-### 0.0.2
-
-* moved `mulle_aba_linkedlist` to own project for the benefit of mulle-objc-runtime
