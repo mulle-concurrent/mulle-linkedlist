@@ -1,4 +1,5 @@
 # mulle-linkedlist Library Documentation for AI
+<!-- Keywords: lock-free, linked-list -->
 
 ## 1. Introduction & Purpose
 
