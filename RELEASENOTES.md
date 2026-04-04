@@ -1,3 +1,11 @@
-### 0.0.6
+### 0.0.7
 
-Various small improvements
+
+
+
+
+
+
+
+* add asset/dox/TOC.md containing API overview, design notes, and usage examples
+* include example code for single-threaded and lock-free concurrent list usage
