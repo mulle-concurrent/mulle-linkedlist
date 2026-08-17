@@ -41,8 +41,6 @@
 //
 #define PROGRESS     0
 #define FOREVER      0
-#define ITERATIONS   1
-#define LOOPS        10
 
 #ifndef ITERATIONS
 # if defined( MULLE_TEST)
@@ -52,6 +50,13 @@
 #  define LOOPS        100000   // (1 + (rand() % 100000))
 #  define ITERATIONS   100
 # endif
+#endif
+
+#ifndef LOOPS
+# define LOOPS  10
+#endif
+#ifndef ITERATIONS
+# define ITERATIONS  1
 #endif
 
 #define MAX_THREADS  1

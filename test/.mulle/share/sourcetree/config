@@ -1,1 +1,1 @@
-mulle-linkedlist;${MULLE__LINKEDLIST_NODETYPE:-tar};;95B5AF81-BB34-4D89-A275-4CBB31C066E4;${MULLE__LINKEDLIST_URL:-https://github.com/mulle-kybernetik-tv/mulle-linkedlist/archive/${MULLE_TAG}.tar.gz};${MULLE__LINKEDLIST_BRANCH};${MULLE__LINKEDLIST_TAG:-latest};;
+mulle-linkedlist;${MULLE__LINKEDLIST_NODETYPE:-tar};;D9BFB231-8BF4-4C1C-8550-450751679A6F;${MULLE__LINKEDLIST_URL:-https://github.com/nat/mulle-linkedlist/archive/${MULLE_TAG}.tar.gz};${MULLE__LINKEDLIST_BRANCH};${MULLE__LINKEDLIST_TAG:-latest};;
