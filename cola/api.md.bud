@@ -2,7 +2,9 @@
 
 | Data Structure                                         | Description
 | -------------------------------------------------------|----------------------------
-| [`mulle-concurrent-linkedlist`](dox/API_LINKEDLIST.md) | A wait and lock free linked list
+| [`mulle-concurrent-linkedlist`](dox/API_LINKEDLIST.md) | A lock-free intrusive linked list
 
-
+The concurrency contract of the concurrent list, which atomic ordering each
+operation uses and what the caller must guarantee, is specified in
+[MEMORY_MODEL.md](dox/MEMORY_MODEL.md).
 

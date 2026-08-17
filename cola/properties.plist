@@ -1,7 +1,7 @@
 {
    project =
    {
-      description="🔂 mulle-linkedlist a wait and lock-free linked list";
+      description="🔂 mulle-linkedlist a lock-free intrusive linked list";
       domain="github";
       name="mulle-linkedlist";
       user="mulle-concurrent";

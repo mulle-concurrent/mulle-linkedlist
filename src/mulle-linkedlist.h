@@ -299,7 +299,9 @@ static inline int
 }
 
 
-#include "mulle-concurrent-linkedlist.h"
+#ifndef MULLE_LINKEDLIST_NO_CONCURRENT
+# include "mulle-concurrent-linkedlist.h"
+#endif
 
 /*
  * The versioncheck header can be generated with
