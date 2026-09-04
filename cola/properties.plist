@@ -7,7 +7,7 @@
       user="mulle-concurrent";
       repo="mulle-linkedlist";
       homepage="https://github.com/mulle-concurrent/mulle-linkedlist";
-       version="0.0.8";
+       version="0.1.0";
       license="BSD-3-Clause";
    };
    dependencies =
