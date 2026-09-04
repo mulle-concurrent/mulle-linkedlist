@@ -1,4 +1,4 @@
-### 0.0.9
+### 0.1.0
 
 * the memory model of `struct _mulle_concurrent_linkedlist` is now specified in
   `dox/MEMORY_MODEL.md` and annotated at each call site
