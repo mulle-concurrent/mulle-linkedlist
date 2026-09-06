@@ -25,8 +25,6 @@ operation uses and what the caller must guarantee, is specified in
 
 
 
-
-
 ## Documentation & Guides
 
 * [API Summary](asset/dox/api/toc)
