@@ -29,7 +29,6 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 //
 #include <mulle-linkedlist/mulle-linkedlist.h>
-#include <mulle-testallocator/mulle-testallocator.h>
 #include <assert.h>
 #include <errno.h>
 #include <stdio.h>
@@ -81,7 +80,6 @@ static void   reset_memory()
 #endif
 
    // use library to track allocations
-   mulle_testallocator_reset();
 
    memset( &alloced, 0, sizeof( alloced));
    memset( &list, 0, sizeof( list));
@@ -124,7 +122,7 @@ static void    run_thread_gc_free_list_test( void)
       }
       else
       {
-         entry = mulle_allocator_calloc( &mulle_testallocator, 1, sizeof( *entry));
+         entry = mulle_allocator_calloc( &mulle_allocator_default, 1, sizeof( *entry));
          _mulle_atomic_pointer_increment( &alloced);
 #if MULLE_ABA_TRACE
          fprintf( stderr, "%s: allocated %p (%p)\n",
@@ -187,7 +185,7 @@ static void   finish_test( void)
    {
       entry = (void *) _mulle_concurrent_linkedlist_remove_one( &list);
       assert( entry);
-      mulle_allocator_free( &mulle_testallocator, entry);
+      mulle_allocator_free( &mulle_allocator_default, entry);
    }
 }
 
@@ -256,7 +254,6 @@ static void  __enable_core_dumps(void)
 static int   _main(int argc, const char * argv[])
 {
    unsigned int   i;
-   unsigned int   j;
    int            rval;
 
    srand( (unsigned int) time( NULL));
@@ -275,7 +272,9 @@ static int   _main(int argc, const char * argv[])
    fprintf( stderr, "This test runs forever, waiting for a crash\n");
 #endif
 
+#if FOREVER
 forever:
+#endif
    reset_memory();
 
    //

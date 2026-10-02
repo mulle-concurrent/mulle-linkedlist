@@ -29,7 +29,6 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 //
 #include <mulle-linkedlist/mulle-linkedlist.h>
-#include <mulle-testallocator/mulle-testallocator.h>
 #include <assert.h>
 #include <errno.h>
 #include <stdio.h>
@@ -73,7 +72,6 @@ static struct _mulle_linkedlist   list;     // common
 static void   reset_memory()
 {
    // use library to track allocations
-   mulle_testallocator_reset();
 
    memset( &list, 0, sizeof( list));
 }
@@ -103,11 +101,11 @@ static void    run_test( void)
          if( entry)
          {
             assert( ! entry->_link._next);
-            mulle_allocator_free( &mulle_testallocator, entry);
+            mulle_allocator_free( &mulle_allocator_default, entry);
          }
       }
 
-      entry = mulle_allocator_calloc( &mulle_testallocator, 1, sizeof( *entry));
+      entry = mulle_allocator_calloc( &mulle_allocator_default, 1, sizeof( *entry));
 
       assert( entry);
       entry->_pointer = (void *) i;
@@ -118,7 +116,7 @@ static void    run_test( void)
    _mulle_linkedlistentry_walk( list._head._next,
                                 (mulle_linkedlistentry_walk_callback_t *)
                                 mulle_allocator_free,
-                                &mulle_testallocator);
+                                &mulle_allocator_default);
    _mulle_linkedlist_remove_all( &list);
 }
 
@@ -142,8 +140,6 @@ static void  __enable_core_dumps(void)
 static int   _main(int argc, const char * argv[])
 {
    unsigned int   i;
-   unsigned int   j;
-   int            rval;
 
    srand( (unsigned int) time( NULL));
 
@@ -151,7 +147,9 @@ static int   _main(int argc, const char * argv[])
    fprintf( stderr, "This test runs forever, waiting for a crash\n");
 #endif
 
+#if FOREVER
 forever:
+#endif
    reset_memory();
 
    //

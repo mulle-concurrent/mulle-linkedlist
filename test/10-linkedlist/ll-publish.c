@@ -54,7 +54,6 @@
 // intercept the C11 thrd_create) or on a weakly ordered CPU.
 //
 #include <mulle-linkedlist/mulle-linkedlist.h>
-#include <mulle-testallocator/mulle-testallocator.h>
 
 #include <assert.h>
 #include <stdio.h>
@@ -194,7 +193,7 @@ static int   _main( void)
 
    for( i = 0; i < N_THREADS * N_ENTRIES; i++)
    {
-      entry = mulle_allocator_calloc( &mulle_testallocator, 1, sizeof( *entry));
+      entry = mulle_allocator_calloc( &mulle_allocator_default, 1, sizeof( *entry));
       publish( entry, i);
       pool[ i] = entry;
       _mulle_concurrent_linkedlist_add( &list, &entry->_link);
@@ -246,9 +245,8 @@ static int   _main( void)
    }
 
    for( i = 0; i < N_THREADS * N_ENTRIES; i++)
-      mulle_allocator_free( &mulle_testallocator, pool[ i]);
+      mulle_allocator_free( &mulle_allocator_default, pool[ i]);
 
-   mulle_testallocator_reset();
 
    return( 0);
 }
