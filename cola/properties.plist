@@ -3,11 +3,12 @@
    {
       description="🔂 mulle-linkedlist a lock-free intrusive linked list";
       domain="github";
+      language="c";
+      dialect="c";
       name="mulle-linkedlist";
       user="mulle-concurrent";
       repo="mulle-linkedlist";
       homepage="https://github.com/mulle-concurrent/mulle-linkedlist";
-       version="0.1.1";
       license="BSD-3-Clause";
    };
    dependencies =
